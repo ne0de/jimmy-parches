@@ -21,7 +21,7 @@ cliente.on('message', (message) => {
     if (!message.content.startsWith(prefijo)) return;
 
     if (message.author.bot) return;
-    message.channel.send("fui yo")
+    //message.channel.send("fui yo")
     const args = message.content.slice(configuracion.prefijo.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     switch (command){
@@ -55,7 +55,7 @@ cliente.on('message', (message) => {
                         },
                         title: "Cuando fui a filipinas :)",
                         image: {
-                            url: 'https://cnnespanol2.files.wordpress.com/2016/03/130329180843-newphilippinescrucifix8-horizontal-large-gallery.jpg?quality=100&strip=info&w=320&h=240&crop=1',
+                            url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbmB-iuoxqhloc-U9iRlt-bpMWQb-WeNO6Dw&usqp=CAU',
                         }
                     }
                 }
